@@ -104,10 +104,8 @@ footer {
     border-radius: 12px;
 }
 
-/* ===== Media Queries ===== */
-
 /* Tablets */
-@media (max-width: 900px) {
+@media (max-width: 1090px) {
     .header-content {
         flex-wrap: wrap;
         justify-content: center;
@@ -135,7 +133,7 @@ footer {
 }
 
 /* Móviles */
-@media (max-width: 600px) {
+@media (max-width: 1090px) {
     .header-content {
         flex-direction: column;
         align-items: center;
