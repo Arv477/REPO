@@ -105,25 +105,29 @@ footer {
 }
 
 @media (max-width: 1090px) {
+    .header-content {
+        display: grid; /* importante */
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        grid-template-rows: auto auto;        /* 2 filas */
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
 
-  nav {
-    display: none; /* Ocultar menú por defecto */
-    width: 100%;
-    background: #647FBC;
-  }
+    nav ul {
+        display: contents; /* hace que cada <li> ocupe su celda del grid */
+    }
 
-  nav.active {
-    display: block; /* Mostrar menú cuando esté activo */
-  }
+    nav li {
+        margin: 0; /* ya no necesitas espacio lateral porque el grid lo gestiona */
+    }
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-  }
+    main {
+        grid-template-columns: 1fr;
+        margin: 20px 0;
+    }
 
-  nav li {
-    margin: 10px 0;
-  }
+    aside {
+        margin-top: 20px;
+    }
 }
