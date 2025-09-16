@@ -102,7 +102,7 @@ footer {
 
 @media (max-width: 1090px) {
     .header-content {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 3fr); 
         grid-template-rows: auto auto; 
         flex-wrap: wrap;
         padding: 15px 20px;
