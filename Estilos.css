@@ -110,7 +110,6 @@ footer {
 
     nav ul {
         flex-wrap: wrap;
-        justify-content: center;
         margin-top: 10px;
     }
 
@@ -125,39 +124,5 @@ footer {
 
     aside {
         margin-top: 20px;
-    }
-}
-
-@media (max-width: 1090px) {
-    .header-content {
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: auto auto; 
-        align-items: center;
-        padding: 15px 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    nav li {
-        margin: 8px 0;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-        margin: 15px 0;
-    }
-
-    article {
-        border-radius: 15px;
-    }
-
-    aside {
-        margin-top: 15px;
-        padding: 15px;
-        border-radius: 15px;
     }
 }
