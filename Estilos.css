@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 80px; /* evita que el header tape el contenido */
+    padding-top: 80px;
 }
 
 .container {
@@ -17,7 +17,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== Header ===== */
 header {
     background: #AED6CF;
     color: white;
@@ -52,7 +51,6 @@ nav a {
     font-weight: 500;
 }
 
-/* ===== Main ===== */
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -82,7 +80,6 @@ aside {
     border-radius: 10px;
 }
 
-/* ===== Footer ===== */
 footer {
     background: #647FBC;
     color: white;
@@ -90,7 +87,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Tags */
 .tags {
     margin: 10px 0;
 }
@@ -104,7 +100,6 @@ footer {
     border-radius: 12px;
 }
 
-/* Tablets */
 @media (max-width: 1090px) {
     .header-content {
         flex-wrap: wrap;
@@ -132,9 +127,10 @@ footer {
     }
 }
 
-/* Móviles */
 @media (max-width: 1090px) {
     .header-content {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto auto;         
         flex-direction: column;
         align-items: center;
         padding: 15px 10px;
