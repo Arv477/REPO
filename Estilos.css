@@ -4,21 +4,24 @@
     box-sizing: border-box;
 }
 
-h1 {
-    line-height: 1.6;
-}
-
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     padding-top: 80px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #303030;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-decoration: none;
 }
 
 header {
@@ -30,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position:fixed;
     background: #647FBC;
     padding: 20px;
     width: 100%;
@@ -55,11 +58,13 @@ nav a {
     font-weight: 500;
 }
 
+/* ===== Main ===== */
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
     margin: 30px 0;
+    text-decoration: none;
 }
 
 article {
@@ -69,12 +74,14 @@ article {
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .article-meta {
     color: #3b3b3b;
     font-size: 0.9em;
     margin: 10px 0;
+    text-decoration: none;
 }
 
 aside {
@@ -82,17 +89,22 @@ aside {
     padding: 20px;
     width: 100%;
     border-radius: 10px;
+    text-decoration: none;
 }
 
+/* ===== Footer ===== */
 footer {
     background: #647FBC;
     color: white;
     text-align: center;
     padding: 20px 0;
+    text-decoration: none;
 }
 
+/* Tags */
 .tags {
     margin: 10px 0;
+    text-decoration: none;
 }
 
 .tag {
@@ -102,23 +114,55 @@ footer {
     margin: 2px;
     font-size: 0.8em;
     border-radius: 12px;
+    text-decoration: none;
 }
 
+/* Tablets */
 @media (max-width: 1090px) {
     .header-content {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    nav li {
+        margin: 10px 15px 0 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        margin: 20px 0;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 1090px) {
+    .header-content {
+        flex-direction:column;
+        align-items:center;
         padding: 15px 10px;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         margin-top: 10px;
+        gap: 10px;
     }
 
     nav li {
-        margin: 8px 0;
+        margin: 4px 0;
     }
 
     main {
