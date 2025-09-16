@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    line-height: 1.6;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -100,28 +104,7 @@ footer {
     border-radius: 12px;
 }
 
-/* Estilos base */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Desktop */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Tablets y móviles */
 @media (max-width: 1090px) {
-  .menu-toggle {
-    display: block; /* Mostrar botón hamburguesa */
-  }
 
   nav {
     display: none; /* Ocultar menú por defecto */
