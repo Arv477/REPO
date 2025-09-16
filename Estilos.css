@@ -8,6 +8,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 80px; /* evita que el header tape el contenido */
 }
 
 .container {
@@ -16,13 +17,12 @@ body {
     padding: 0 20px;
 }
 
+/* ===== Header ===== */
 header {
     background: #AED6CF;
     color: white;
-    padding: 1rem 0;
 }
 
-/* Header fijo con corrección de ancho y posición */
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,6 @@ header {
     z-index: 1000;
 }
 
-/* Para evitar que el contenido quede oculto bajo el header fijo */
-body {
-    padding-top: 80px; /* Ajusta según la altura del header */
-}
-
 nav ul {
     display: flex;
     list-style: none;
@@ -54,13 +49,10 @@ nav li {
 nav a {
     color: #FAFDD6;
     text-decoration: none;
+    font-weight: 500;
 }
 
-a {
-    color: #2c2c2c;
-    text-decoration: none;
-}
-
+/* ===== Main ===== */
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -74,6 +66,7 @@ article {
     box-shadow: 0 2px 30px #6b6b6b;
     text-align: center;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .article-meta {
@@ -85,11 +78,11 @@ article {
 aside {
     background: #AED6CF;
     padding: 20px;
-    width: 100%; /* Cambiado de 120% a 100% para evitar overflow */
+    width: 100%;
     border-radius: 10px;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
     background: #647FBC;
     color: white;
@@ -97,13 +90,9 @@ footer {
     padding: 20px 0;
 }
 
-.search-form {
-    margin: 20px 0;
-}
-
+/* Tags */
 .tags {
     margin: 10px 0;
-    text-decoration: none;
 }
 
 .tag {
@@ -112,13 +101,12 @@ footer {
     padding: 3px 8px;
     margin: 2px;
     font-size: 0.8em;
-    text-decoration: none;
     border-radius: 12px;
 }
 
-/* Media Queries para responsividad */
+/* ===== Media Queries ===== */
 
-/* Tablets y pantallas medianas */
+/* Tablets */
 @media (max-width: 900px) {
     .header-content {
         flex-wrap: wrap;
@@ -142,7 +130,6 @@ footer {
     }
 
     aside {
-        width: 100%;
         margin-top: 20px;
     }
 }
@@ -175,7 +162,6 @@ footer {
     }
 
     aside {
-        width: 100%;
         margin-top: 15px;
         padding: 15px;
         border-radius: 15px;
