@@ -105,7 +105,6 @@ footer {
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: auto auto; 
         flex-wrap: wrap;
-        justify-content: center;
         padding: 15px 20px;
     }
 
